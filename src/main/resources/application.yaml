@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+spring:
+  jackson:
+    serialization:
+      INDENT_OUTPUT: true
+      write_dates_as_timestamps: true
+  datasource:
+    url: jdbc:phoenix:thin:url=http://172.24.30.35:8765;serialization=PROTOBUF
+
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
